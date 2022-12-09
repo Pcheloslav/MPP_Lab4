@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleApp": {
+      "commandName": "Project",
+      "commandLineArgs": "-r 5 -g 5 -w 1 --outputPath ../../../generated --sourceFile ../../../../TestsLibrary/GeneratorPipeline.cs --sourceFile ../../../NestedClass.cs"
+    }
+  }
+}
