@@ -2,7 +2,7 @@
   "profiles": {
     "ConsoleApp": {
       "commandName": "Project",
-      "commandLineArgs": "-r 5 -g 5 -w 1 --outputPath ../../../generated --sourceFile ../../../../TestsLibrary/GeneratorPipeline.cs --sourceFile ../../../NestedClass.cs"
+      "commandLineArgs": "-r 1 -g 1 --writeParallelism 3 --outputPath ../../../generated --sourceFile ../../../../TestsLibrary/GeneratorPipeline.cs --sourceFile ../../../NestedClass.cs"
     }
   }
 }

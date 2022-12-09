@@ -56,14 +56,14 @@ namespace ConsoleApp
                     Console.WriteLine("First method");
                 }
 
-                public void SecondMethod()
-                {
-                    Console.WriteLine("Second method");
-                }
-
                 public void ThirdMethod(int _)
                 {
                     Console.WriteLine("Third method (int)");
+                }
+
+                public void SecondMethod()
+                {
+                    Console.WriteLine("Second method");
                 }
 
                 public void ThirdMethod(double _)

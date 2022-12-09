@@ -4,9 +4,6 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Text;
-using System.Data.Common;
-using System.Reflection.Metadata.Ecma335;
-using System;
 
 namespace TestsLibrary
 {
@@ -125,7 +122,7 @@ namespace TestsLibrary
                 (methods[i].Identifier.Text == methods[i + 1].Identifier.Text);
         }
 
-        private static bool IsSameNameAsPrevMethof(List<MethodDeclarationSyntax> methods, int i)
+        private static bool IsSameNameAsPrevMethod(List<MethodDeclarationSyntax> methods, int i)
         {
             return (i > 0) &&
                 (methods[i].Identifier.Text == methods[i - 1].Identifier.Text);
@@ -137,7 +134,7 @@ namespace TestsLibrary
             {
                 methodIndex = methodIndex < 0 ? 1 : methodIndex + 1;
             }
-            else if (IsSameNameAsPrevMethof(methods, i))
+            else if (IsSameNameAsPrevMethod(methods, i))
             {
                 methodIndex++;
             }
